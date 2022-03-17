@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+
+    <title>ABC</title>
+  </head>
+  <body>
+    <div class="topnav">
+      <a class="active" href="#home">Login/Signup</a>
+      <a href="#contact">Contact Us</a>
+       
+      <a href="#about"> <span class="fa fa-shopping-cart"></span></a>
+     <a style="margin-left: -2%; z-index: 5;" href=""> <span class="fa fa-search"></span></a>
+       <input type="text" placeholder="Search..">
+      
+      
+    </div>
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-sm-3 sidebar">
+                   <div class="linkref">
+                       <a href="">Home</a> /
+                       <a href="" class="link-active">Product Detail page</a>
+                   </div>
+                   <div class="row">
+                     <div class="col-sm-12">
+                      <div class="headertag" >
+                        <p >Tags:</p>
+                        <br/>
+                       </div>
+                     </div>
+                     <div class="col-sm-12 buttons">
+                      <button class="rounded" style="  display: inline-block;">Kitchen</button>
+                     
+                      <button class="rounded" style="  display: inline-block; margin-left: 4%;">L-Shape</button>
+                    
+                     </div>
+                     <div class="col-sm-12 buttons">
+                      <button class="rounded sustain">Sustainable</button>
+                      
+                    </div>
+                    <div class="images">
+                      <img src="img1.jpg" onclick="changeImage('img1.jpg')"  alt="">
+                      <img src="img2.jpg"  onclick="changeImage('img2.jpg')"  alt="">
+                      <img src="img3.jpg"  onclick="changeImage('img3.jpg')"  alt="">
+                      <img src="img4.jpg"  onclick="changeImage('img4.jpg')"  alt="">
+                     
+                    </div>
+                   </div>
+                 
+                   
+                          
+                      
+                      
+              </div>
+              <div class="col-sm-9 main-content">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div class="dropdown">
+                      <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Navigation Category A
+                      </button>
+                     
+                    </div>
+
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="dropdown">
+                      <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Navigation Item A
+                      </button>
+                     
+                    </div>
+                  </div>
+                </div>
+                <div class="content">
+                  <h2>Product Name ABC</h2>
+                  <h6>Product Category Name(Example:Plywood)</h6>
+                  <br>
+                <div class="ratings" style="margin-top: -1%;">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star unchecked"></span>
+                  <span class="fa fa-star unchecked"></span>
+                  <h5 style="display: inline-block;">4.4</h5>
+                  <h4 style="display: inline-block;">(328 reviews)</h4>
+                  <a  style="display: inline-block;" href="">Build My Project</a>
+                  <h3  style="display: inline-block;">&#8377; 2110.00 per sheet</h3>
+                 
+                </div>
+                <h5 style="margin-left:16%;margin-top: 5%;">
+                  Product Desciption
+                </h5> <div class="overflow-auto para">
+                      
+                      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                      <h6 style="margin-top:6%;display: inline-block;">Available online </h6>
+                      <h5 style="display: inline-block;font-weight: 600;">189</h5>
+                      <h5 style="display: inline-block;">Quantity</h5>
+                      <h4   onclick="decrement()" style="display: inline-block; cursor: pointer;  color:orange; margin-left:30px;">-</h4>
+                      <h4 id="valueNumber" style="display: inline-block; margin-left:10px;">1</h4>
+                      <h4  onclick="increment()" style="display: inline-block; cursor: pointer;   color:orange;  margin-left:10px;">+</h4>
+                      <div class="cart">
+                        <button style=" display: inline-block;">Add To Cart</button>
+                      </div>
+                      <div class="absolute"><img src="img1.jpg" id="selecteImage" alt=""></div>
+                    </div>
+                  </div>
+               
+              </div>
+          </div>
+          
+      </div>
+      <div class="container nextcontent">
+        <h4>Recommended Products for You</h4>
+        <div class="row">
+         
+          <div class="col-sm-4">
+            <div class="card" style="width: 18rem;">
+              <span  class="fa fa-heart heart"></span>
+              <img src="img9.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Product Name ABC</h5>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star unchecked"></span>
+                <span class="fa fa-star unchecked"></span>
+                <p class="card-text">"Lorem ipsum dolor si Excepteur ssed do eiusmod temport dolore magna aliqua . Ut enim ad minim veniam, consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse </p>
+                 <hr>
+                 <h4>&#8377;21.58 per box</h4>
+                 <h6>Compare   <span   style="display: inline-block; cursor: pointer; margin-left: 150px; font-size: 50px;   color:orange; ">+</span></h6>
+               
+                <button class="quick" style="display: inline-block;" href="#" >Quick Look</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card" style="width: 18rem;">
+              <span  class="fa fa-heart heart"></span>
+              <img src="img9.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Product Name ABC</h5>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star unchecked"></span>
+                <span class="fa fa-star unchecked"></span>
+                <p class="card-text">"Lorem ipsum dolor si Excepteur ssed do eiusmod temport dolore magna aliqua . Ut enim ad minim veniam, consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse </p>
+                 <hr>
+                 <h4>&#8377;21.58 per box</h4>
+                 <h6>Compare   <span   style="display: inline-block; cursor: pointer; margin-left: 150px; font-size: 50px;   color:orange; ">+</span></h6>
+               
+                <button class="quick" style="display: inline-block;" href="#" >Quick Look</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card" style="width: 18rem;">
+              <span  class="fa fa-heart heart"></span>
+              <img src="img9.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Product Name ABC</h5>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star unchecked"></span>
+                <span class="fa fa-star unchecked"></span>
+                <p class="card-text">"Lorem ipsum dolor si Excepteur ssed do eiusmod temport dolore magna aliqua . Ut enim ad minim veniam, consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse </p>
+                 <hr>
+                 <h4>&#8377;21.58 per box</h4>
+                 <h6>Compare   <span   style="display: inline-block; cursor: pointer; margin-left: 150px; font-size: 50px;   color:orange; ">+</span></h6>
+               
+                <button class="quick" style="display: inline-block;" href="#" >Quick Look</button>
+              </div>
+            </div>
+          </div>
+        
+          
+        </div>
+      <div class="row" style="margin-top:4%">
+        <div class="col-sm-4">
+          <div class="card" style="width: 18rem;">
+            <span  class="fa fa-heart heart"></span>
+            <img src="img9.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Product Name ABC</h5>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star unchecked"></span>
+              <span class="fa fa-star unchecked"></span>
+              <p class="card-text">"Lorem ipsum dolor si Excepteur ssed do eiusmod temport dolore magna aliqua . Ut enim ad minim veniam, consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse </p>
+               <hr>
+               <h4>&#8377;21.58 per box</h4>
+               <h6>Compare   <span   style="display: inline-block; cursor: pointer; margin-left: 150px; font-size: 50px;   color:orange; ">+</span></h6>
+             
+              <button class="quick" style="display: inline-block;" href="#" >Quick Look</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card" style="width: 18rem;">
+            <span  class="fa fa-heart heart"></span>
+            <img src="img9.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Product Name ABC</h5>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star unchecked"></span>
+              <span class="fa fa-star unchecked"></span>
+              <p class="card-text">"Lorem ipsum dolor si Excepteur ssed do eiusmod temport dolore magna aliqua . Ut enim ad minim veniam, consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse </p>
+               <hr>
+               <h4>&#8377;21.58 per box</h4>
+               <h6>Compare   <span   style="display: inline-block; cursor: pointer; margin-left: 150px; font-size: 50px;   color:orange; ">+</span></h6>
+             
+              <button class="quick" style="display: inline-block;" href="#" >Quick Look</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card" style="width: 18rem;">
+            <span  class="fa fa-heart heart"></span>
+            <img src="img9.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Product Name ABC</h5>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star unchecked"></span>
+              <span class="fa fa-star unchecked"></span>
+              <p class="card-text">"Lorem ipsum dolor si Excepteur ssed do eiusmod temport dolore magna aliqua . Ut enim ad minim veniam, consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse </p>
+               <hr>
+               <h4>&#8377;21.58 per box</h4>
+               <h6>Compare   <span   style="display: inline-block; cursor: pointer; margin-left: 150px; font-size: 50px;   color:orange; ">+</span></h6>
+             
+              <button class="quick" style="display: inline-block;" href="#" >Quick Look</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <script>
+        function changeImage(img)
+        {
+          document.getElementById("selecteImage").src = img;
+        }
+        function increment()
+        {
+          var l=parseInt(document.getElementById('valueNumber').innerHTML);
+          document.getElementById('valueNumber').innerHTML=l+1;
+          
+        }
+        function decrement()
+        {
+          var l=parseInt(document.getElementById('valueNumber').innerHTML);
+          document.getElementById('valueNumber').innerHTML=l-1;
+          
+        }
+      </script>
+    <!-- Optional JavaScript; choose one of the two! -->
+    
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+  
+</html>
